@@ -54,3 +54,17 @@ A `method header` marks the beginning of a `method`. *Every* Java app must have 
 ## Application Programmer Interfaces (APIs) and Java
 
 `APIs` have a slightly different connotation in Java than they do with web frameworks. The textbook boilerplate for a `Java API` is: *a standard library of prewritten classes for performing specific operations.* Por ejemplo, `print` and `println` are `methods` that are part of the `System` class that is part of the `Java API`. `System` contians objects and methods that perform system-level operations. An `object` of the `System` class is `out`, that has internal `methods` such as `print` and `println`.
+
+## Escape! Some common escape sequences
+
+| Escape Sequence | Name           | Description                                           |
+| --------------  |:--------------:|:-----------------------------------------------------:|
+| \n              | Newline        | (advances cursor to the next line)
+| \t              | Horizontal tab | (causes the cursor to skip over to the next tab stop)
+| \b              | Backspace      | (moves the cursor back either up OR left, one position)
+| \r              | Return         | (moves the cursor to the beginning of the current line)
+| \\              | Backslash      | (prints the backslash char)
+| \'              | Single quote   | (prints the single quote char)
+| \"              | Double quote   | (prints the double quote char)
+
+
