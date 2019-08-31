@@ -118,7 +118,21 @@ Per convention, a class should contain a `constructor` `method` in its *fields*.
 `MyClassDemo aRectangle = new MyClassDemo(15, 20)`
 `MyClassDemo yetAnotherRectangle = new MyClassDemo(777, 4444)`
 
-^ the above creates two `object` of the `class` `MyClassDemo`, stored in the `variable`s called `aRectangle` and `yetAnotherRectangle`, with the *values* of 15 and 20 in `aRectangle`, and the *values* 777 and 4444 in `yetAnotherRectangle`, thanks to `MyClassDemo`'s `constructor` `method`.
+^ the above creates two `object` of the `class` `MyClassDemo`, stored in the `variable`s called `aRectangle` and `yetAnotherRectangle`, with the *values* of 15 and 20 in `aRectangle`, and the *values* 777 and 4444 in `yetAnotherRectangle`, thanks to `MyClassDemo`'s `constructor` `method`. By convention and syntax, a `constructor method` must be the same name as the `class`. A `class` named *MyClassDemo* would not have a `constructor method` named *MyClassDemoConstructor*
+
+#### A Special Case: the defaualt, and the no-args constructor!
+
+Exactly what it says on the tin. A `class` without an explicitly defined `constructor method` will be given one by Java at compilation, with all numeric values set to 0, `booleans` set to `false`, and *reference* `variables` set to `null`. However, there may be use cases where a `class` does not need to accept input when being instansiated as an `object`, but comes with its own pre-defined values. The syntax for a `no-args constructor` may be as simple as 
+
+```
+public MyClassDemo() {
+    length = 1.0;
+    width = 1.0;
+} 
+```
+
+Two important things to note: any `constructor method`, `no-args` or otherwise, will override Java's `default constructor`, and a `no-args` constructor does not need `@params` if it is setting *fields*. 
+
 
 Also per convention, a class's *fields* (I don't like that word) should be private, and `accessor` and `mutator` methods should be written so that those *fields* must be accessed explicitly using dot notation. En lo ejemplo anterior, los `accessor` methods es `getLength()` and `getWidth()`, while the `mutator` methods `setLength()` and `setWidth()` allow a change to the *fields* from outside the scope of the class. 
 
