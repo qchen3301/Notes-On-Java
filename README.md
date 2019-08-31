@@ -1,6 +1,26 @@
 # Notes-On-Java
 Much learn (wow) so study
 
+                   ▄              ▄
+                  ▌▒█           ▄▀▒▌
+                  ▌▒▒█        ▄▀▒▒▒▐
+                 ▐▄▀▒▒▀▀▀▀▄▄▄▀▒▒▒▒▒▐
+               ▄▄▀▒░▒▒▒▒▒▒▒▒▒█▒▒▄█▒▐
+             ▄▀▒▒▒░░░▒▒▒░░░▒▒▒▀██▀▒▌
+            ▐▒▒▒▄▄▒▒▒▒░░░▒▒▒▒▒▒▒▀▄▒▒▌
+            ▌░░▌█▀▒▒▒▒▒▄▀█▄▒▒▒▒▒▒▒█▒▐
+           ▐░░░▒▒▒▒▒▒▒▒▌██▀▒▒░░░▒▒▒▀▄▌
+           ▌░▒▄██▄▒▒▒▒▒▒▒▒▒░░░░░░▒▒▒▒▌
+          ▌▒▀▐▄█▄█▌▄░▀▒▒░░░░░░░░░░▒▒▒▐
+          ▐▒▒▐▀▐▀▒░▄▄▒▄▒▒▒▒▒▒░▒░▒░▒▒▒▒▌
+          ▐▒▒▒▀▀▄▄▒▒▒▄▒▒▒▒▒▒▒▒░▒░▒░▒▒▐
+           ▌▒▒▒▒▒▒▀▀▀▒▒▒▒▒▒░▒░▒░▒░▒▒▒▌
+           ▐▒▒▒▒▒▒▒▒▒▒▒▒▒▒░▒░▒░▒▒▄▒▒▐
+            ▀▄▒▒▒▒▒▒▒▒▒▒▒░▒░▒░▒▄▒▒▒▒▌
+              ▀▄▒▒▒▒▒▒▒▒▒▒▄▄▄▀▒▒▒▒▄▀
+                ▀▄▄▄▄▄▄▀▀▀▒▒▒▒▒▄▄▀
+                   ▒▒▒▒▒▒▒▒▒▒▀▀
+
 ## Boilerplate Purpose  
 
 This repo and its files will host my self-study on Java, to be used later as reference material, or a quick 'how-to' guide for working with IDEs such as Eclipse or IntelliJ, while doubling as good practice to keep my understanding of Git commands up to date. I will be primarily referencing the textbook 'Starting Out With Java' (6th Ed) by Tony Gaddis. Any additional reference material (blogposts, how-to guides) will be documented in the Acknowledgements/References subheader. 
@@ -37,7 +57,7 @@ IDEs bundle together text editing, compiling, debugging and other utilities into
 
 ## The Structure and Syntax of Java
 
-```
+```java
 public class Sample {
     public static void main(String[] args) {
         System.out.println("Hello World, from a very simple Java program!");
@@ -60,7 +80,7 @@ An `object` descends from a `class`. When a program is run, it creates `object`s
 
 ### The structure and syntax of a Java class
 
-```
+```java
 AccessSpecifier class Name {
     Members
 } 
@@ -68,7 +88,7 @@ AccessSpecifier class Name {
 
 `public` or `private` *AccessSpecifiers* defines the scope of a `class`. A `public` class is available to to code outside its file. A `private` class is accessible only within its own file. Likewise, all *fields* (aka `variables`) and `method`s contained within a `class`'s curly-bois are its `members`, and those can also be defined as `public` or `private`. Un ejemplo por a `class` de Java, con `method`es y commentarios, es
 
-```
+```java
 //this class has methods to return the length and width of a rectangle
 
 public class MyClassDemo { 
@@ -124,7 +144,7 @@ Per convention, a class should contain a `constructor` `method` in its *fields*.
 
 Exactly what it says on the tin. A `class` without an explicitly defined `constructor method` will be given one by Java at compilation, with all numeric values set to 0, `booleans` set to `false`, and *reference* `variables` set to `null`. However, there may be use cases where a `class` does not need to accept input when being instansiated as an `object`, but comes with its own pre-defined values. The syntax for a `no-args constructor` may be as simple as 
 
-```
+```java
 public MyClassDemo() {
     length = 1.0;
     width = 1.0;
@@ -188,7 +208,7 @@ name.charAt(3); //returns 'm'
 
 ### If-else conditonal syntax in Java
 
-```
+```java
 if (conditions =/</>/!=/etc) {
     performAction;
     performSecondAction;
@@ -234,7 +254,7 @@ The `method header` can be broken down into four distinct parts. They are, seque
 
 A value *passed **into*** a `method` is its `argument`. A `variable` that **receives** an `argument` is a `parameter`. Por ejemplo:
 
-```
+```java
 public static void showSum(double num1, double num2) {
     double sumDouble; 
     sumDouble = num1 + num2; //num1 and num2 are PARAMETERS
