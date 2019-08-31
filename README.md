@@ -47,6 +47,8 @@ public class Sample {
 
 The `class` is the most basic "unit" of Java. A Java file may have more than one `class` but it can only have one `public class`. Each `public class` of a Java file must be the same name as the file. The code block above must be named `Sample.java`, por ejemplo.
 
+An `object` descends from a `class`. When a program is run, it creates `object`s based on the parameters set by a `class`. Every `object` created from a class is called an `instance` of that class. 
+
 ## Naming conventions
 `variables` begin with lowercase and follow camelCase
 
@@ -55,6 +57,16 @@ The `class` is the most basic "unit" of Java. A Java file may have more than one
 ## Assignment
 
 Assignment must follow `variable` `=` `value` convention. `myVar = 12` is valid, but `12 = myVar` will throw an error. Assignment CAN be done at initialization, por ejemplo: `int myVar = 12, days = 28`
+
+## Casting
+The `cast operator` allows a manual conversion of a `variable`'s value, even if it leads to a narrowing conversion. The syntax is:
+
+`varName` = `(newDataType) previousValue`
+
+Por ejemplo:
+
+`myStringVar` = `(int) 3345` <-this converts the literal string '3345' into the integer 3345 
+
 
 
 ### Methods and method headers
