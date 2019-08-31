@@ -127,7 +127,39 @@ if (conditions =/</>/!=/etc) {
 
 ### Methods and method headers
 
-A `method header` marks the beginning of a `method`. *Every* Java app must have a `main method`. **IntelliJ** has a keyboard macro for quickly construction a `main method` - `psvm`
+A `method header` marks the beginning of a `method`. *Every* Java app must have a `main method`. **IntelliJ** has a keyboard macro for quickly construction a `main method`: `psvm`
+
+The `method header` can be broken down into four distinct parts. They are, sequentially:
+
+* the method modifiers
+* the return type
+* the method name
+* parentheses
+
+*Method modifiers* define the scope of the method. 
+* `public` methods are available to code outside the scope of the `class`.
+* `static` methods belong to a `class`, and not a specific `object`
+
+*return type* is self-explanatory.
+* `void` methods do NOT return values
+
+*method name* is also self-explanatory.
+
+*parentheses* are where `variables` are set to receive `arguments`. A `void` method still needs *parentheses*, as a matter of consistency.
+
+#### Parameters and Arguments
+
+A value *passed **into*** a `method` is its `argument`. A `variable` that **receives** an `argument` is a `parameter`. Por ejemplo:
+
+```
+public static void showSum(double num1, double num2) {
+    double sumDouble; 
+    sumDouble = num1 + num2; //num1 and num2 are PARAMETERS
+    System.out.println("The sum is " + sumDouble);
+}
+
+showSum(5, 10); // 5 and 10 are ARGUMENTS
+```
 
 ## Application Programmer Interfaces (APIs) and Java
 
