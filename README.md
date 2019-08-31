@@ -3,7 +3,9 @@ Much learn (wow) so study
 
 ## Boilerplate Purpose  
 
-This repo and its files will host my self-study on Java, to be used later as reference material, or a quick 'how-to' guide for working with IDEs such as Eclipse or IntelliJ, while doubling as good practice to keep my understanding of Git commands up to date. I will be primarily referencing the textbook 'Starting Out With Java' (6th Ed) by Tony Gaddis. Any additional reference material (blogposts, how-to guides) will be documented in the Acknowledgements/References subheader. This repo is not meant to be a comprehensive overview on Java nor computer programming, either conceptually or practically. A Table Of Contents will be added eventually to facilitate access to specific subheaders, and condensed, information-heavy subheaders may be spun off into seperate files.
+This repo and its files will host my self-study on Java, to be used later as reference material, or a quick 'how-to' guide for working with IDEs such as Eclipse or IntelliJ, while doubling as good practice to keep my understanding of Git commands up to date. I will be primarily referencing the textbook 'Starting Out With Java' (6th Ed) by Tony Gaddis. Any additional reference material (blogposts, how-to guides) will be documented in the Acknowledgements/References subheader. 
+
+This repo is not meant to be a comprehensive overview on Java nor computer programming, either conceptually or practically. A Table Of Contents will be added eventually to facilitate access to specific subheaders, and condensed, information-heavy subheaders may be spun off into seperate files.
 
 ## Hardware
 
@@ -49,12 +51,65 @@ An `object` descends from a `class`. When a program is run, it creates `object`s
 
 `Class`es must be *imported* in order to be used by Java programs, and are by convention imported at the very top of the program, before any other declarations.
 
-### Naming conventions
+### Naming conventions in general
 `variables` begin with lowercase and follow camelCase.
 
 `primitive data types` also begin with lowercase
 
 `class`es begin with uppercase
+
+### The structure and syntax of a Java class
+
+```
+AccessSpecifier class Name {
+    Members
+} 
+```
+
+`public` or `private` *AccessSpecifiers* defines the scope of a `class`. A `public` class is available to to code outside its file. A `private` class is accessible only within its own file. Likewise, all *fields* (aka `variables`) and `method`s contained within a `class`'s curly-bois are its `members`, and those can also be defined as `public` or `private`. Un ejemplo por a `class` de Java, con `method`es y commentarios, es
+
+```
+//this class has methods to return the length and width of a rectangle
+
+public class myClassDemo { 
+    private double length;
+    private double width;
+
+    public void setLength(double len) {
+        length = len;
+        //@param len stores the value of the length field (or variable)
+        //this method is void because there is no value being returned
+    }
+
+    public void setWidth(double wid) {
+        width = wid;
+        //@param wid stores the value of the width field/variable
+        //this method, like its partner setLength, is void because
+        //there is no value being returned
+    }
+
+    public double getLength() {
+        return length;
+        //@return length variable, as a double
+    }
+
+    public double getWidth() {
+        return width;
+        //@return width variable, also as a double
+    }
+
+    public double getArea() {
+        return length * width;
+        //@return the product of the length and width variables
+    }
+}
+```
+
+Per convention, a class's *fields* (I don't like that word) should be private, and `accessor` and `mutator` methods should be written so that those *fields* must be accessed explicitly using dot notation. En lo ejemplo anterior, los `accessor` methods es `getLength()` and `getWidth()`, while the `mutator` methods `setLength()` and `setWidth()` allow a change to the *fields* from outside the scope of the class. 
+
+* `Accessor` = `getter`
+* `Mutator` = `setter`
+
 
 ### Assignment
 
@@ -69,7 +124,7 @@ Por ejemplo:
 
 `myStringVar` = `(int) 3345` <-this converts the literal string '3345' into the integer 3345 
 
-### The Strange Tale of The String Class
+### The Strange Case of The String Class
 
 The `String` class (always capitalized, following proper naming convention) has a few baked-in `methods` for quality of life operations.
 
@@ -90,7 +145,7 @@ name.charAt(3); //returns 'm'
 
 `.compareTo()` is similar to `.equals()` but will return either `0`, `1`, or `-1` to determine whether or not a `String` *literal* or `variable` is equal, longer, or shorter. This `method` can be used in conjunction with *relational operators*, such as `==`, `<`, `>`, etc 
 
-** BE AWARE THAT `.equals()` AND `.compareTo()` ARE *CASE SENSITIVE* !!**
+**BE AWARE THAT `.equals()` AND `.compareTo()` ARE *CASE SENSITIVE* !!**
 
 ### Demonstrating Objects and Classes with `Scanner`
 
