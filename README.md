@@ -39,8 +39,12 @@ IDEs bundle together text editing, compiling, debugging and other utilities into
 
 <code>
 public class Sample {
+
     public static void main(String[] args) {
+
         System.out.println("Hello World, from a very simple Java program!");
+
     }
+    
 }
 </code>
