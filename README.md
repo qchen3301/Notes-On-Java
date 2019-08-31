@@ -71,9 +71,17 @@ AccessSpecifier class Name {
 ```
 //this class has methods to return the length and width of a rectangle
 
-public class myClassDemo { 
+public class MyClassDemo { 
     private double length;
     private double width;
+
+    public MyClassDemo(double len, double wid) { 
+        length = len;
+        width = wid;
+        //this is a constructor, see explanation below
+        //@param len - the length of a rectangle
+        //@param wid - the width of a rectangle
+    }
 
     public void setLength(double len) {
         length = len;
@@ -105,7 +113,14 @@ public class myClassDemo {
 }
 ```
 
-Per convention, a class's *fields* (I don't like that word) should be private, and `accessor` and `mutator` methods should be written so that those *fields* must be accessed explicitly using dot notation. En lo ejemplo anterior, los `accessor` methods es `getLength()` and `getWidth()`, while the `mutator` methods `setLength()` and `setWidth()` allow a change to the *fields* from outside the scope of the class. 
+Per convention, a class should contain a `constructor` `method` in its *fields*. `Constructor` `method`s perform setup and initializing operations, such as but not limited to storing initial values in instance *fields*. This allows access to a class as an object *reference*. Por ejemplo:
+
+`MyClassDemo aRectangle = new MyClassDemo(15, 20)`
+`MyClassDemo yetAnotherRectangle = new MyClassDemo(777, 4444)`
+
+^ the above creates two `object` of the `class` `MyClassDemo`, stored in the `variable`s called `aRectangle` and `yetAnotherRectangle`, with the *values* of 15 and 20 in `aRectangle`, and the *values* 777 and 4444 in `yetAnotherRectangle`, thanks to `MyClassDemo`'s `constructor` `method`.
+
+Also per convention, a class's *fields* (I don't like that word) should be private, and `accessor` and `mutator` methods should be written so that those *fields* must be accessed explicitly using dot notation. En lo ejemplo anterior, los `accessor` methods es `getLength()` and `getWidth()`, while the `mutator` methods `setLength()` and `setWidth()` allow a change to the *fields* from outside the scope of the class. 
 
 * `Accessor` = `getter`
 * `Mutator` = `setter`
