@@ -49,16 +49,18 @@ The `class` is the most basic "unit" of Java. A Java file may have more than one
 
 An `object` descends from a `class`. When a program is run, it creates `object`s based on the parameters set by a `class`. Every `object` created from a class is called an `instance` of that class. 
 
-## Naming conventions
-`variables` begin with lowercase and follow camelCase
+### Naming conventions
+`variables` begin with lowercase and follow camelCase.
+
+`primitive data types` also begin with lowercase
 
 `class`es begin with uppercase
 
-## Assignment
+### Assignment
 
 Assignment must follow `variable` `=` `value` convention. `myVar = 12` is valid, but `12 = myVar` will throw an error. Assignment CAN be done at initialization, por ejemplo: `int myVar = 12, days = 28`
 
-## Casting
+### Casting
 The `cast operator` allows a manual conversion of a `variable`'s value, even if it leads to a narrowing conversion. The syntax is:
 
 `varName` = `(newDataType) previousValue`
@@ -67,6 +69,32 @@ Por ejemplo:
 
 `myStringVar` = `(int) 3345` <-this converts the literal string '3345' into the integer 3345 
 
+### The Strange Tale of The String Class
+
+The `String` class (always capitalized, following proper naming convention) has a few baked-in `methods` for quality of life operations.
+
+`.length()` returns the length, in `int`s, of a `var`
+
+`.charAt(someNumber)` returns the char at that position of a `String`. Por ejemplo:
+
+```
+String name = "Herman";
+name.charAt(3); //returns 'm'
+```
+
+`.toLowerCase()` renders anything `String` with *UpPErCaSE* to all *lowercase*
+
+`.toUpperCase()` returns the opposite, transforming `String` to all *UPPERCASE*
+
+### Demonstrating Objects and Classes with `Scanner`
+
+`System.out` is an `object`. Its twin, `System.in` is also an `object`. However `System.in` only takes in data as *bytes*, so it must be partnered with a baked-in `class` called `Scanner` to have practical functionality.
+
+`Scanner myScannerObject = new Scanner(System.in);`
+
+* `Scanner` calls the `class` 
+* `myScannerObject` is the name of the `object` of the `Scanner` `class`
+* `= new Scanner(System.in)` creates a `Scanner` `object` *in memory*, and gives it the functionality to *read input* from `System.in`
 
 
 ### Methods and method headers
