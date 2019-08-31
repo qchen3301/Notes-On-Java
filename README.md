@@ -1,12 +1,10 @@
 # Notes-On-Java
 Much learn (wow) so study
 
----
 ## Boilerplate Purpose  
 
 This repo and its files will host my self-study on Java, to be used later as reference material, or a quick 'how-to' guide for working with IDEs such as Eclipse or IntelliJ, while doubling as good practice to keep my understanding of Git commands up to date. I will be primarily referencing the textbook 'Starting Out With Java' (6th Ed) by Tony Gaddis. Any additional reference material (blogposts, how-to guides) will be documented in the Acknowledgements/References subheader. This repo is not meant to be a comprehensive overview on Java nor computer programming, either conceptually or practically. A Table Of Contents will be added eventually to facilitate access to specific subheaders, and condensed, information-heavy subheaders may be spun off into seperate files.
 
----
 ## Hardware
 
 **Random Access Memory**: RAM holds the sequence of instructions, coded in binary, that programs references for its instructions.
@@ -141,7 +139,8 @@ The `method header` can be broken down into four distinct parts. They are, seque
 * `static` methods belong to a `class`, and not a specific `object`
 
 *return type* is self-explanatory.
-* `void` methods do NOT return values
+* `void` methods do NOT return values.
+* Any other *type* of return must be defined: por ejemplo, `public static int myMethod()`, or `public static String myMethod2`
 
 *method name* is also self-explanatory.
 
@@ -160,6 +159,8 @@ public static void showSum(double num1, double num2) {
 
 showSum(5, 10); // 5 and 10 are ARGUMENTS
 ```
+
+As a matter of convention, when commenting on `parameters`, use `@param` to denote when a `variable` is a `parameter` of a `method`, and `@return` to define the value a `method` returns.
 
 ## Application Programmer Interfaces (APIs) and Java
 
