@@ -47,6 +47,16 @@ public class Sample {
 
 The `class` is the most basic "unit" of Java. A Java file may have more than one `class` but it can only have one `public class`. Each `public class` of a Java file must be the same name as the file. The code block above must be named `Sample.java`, por ejemplo.
 
+## Naming conventions
+`variables` begin with lowercase and follow camelCase
+
+`class`es begin with uppercase
+
+## Assignment
+
+Assignment must follow `variable` `=` `value` convention. `myVar = 12` is valid, but `12 = myVar` will throw an error. Assignment CAN be done at initialization, por ejemplo: `int myVar = 12, days = 28`
+
+
 ### Methods and method headers
 
 A `method header` marks the beginning of a `method`. *Every* Java app must have a `main method`. **IntelliJ** has a keyboard macro for quickly construction a `main method`: `psvm`
@@ -63,8 +73,7 @@ A `method header` marks the beginning of a `method`. *Every* Java app must have 
 | \t              | Horizontal tab | (causes the cursor to skip over to the next tab stop)
 | \b              | Backspace      | (moves the cursor back either up OR left, one position)
 | \r              | Return         | (moves the cursor to the beginning of the current line)
-| \\              | Backslash      | (prints the backslash char)
+| \\\\            | Backslash      | (prints the backslash char)
 | \'              | Single quote   | (prints the single quote char)
 | \"              | Double quote   | (prints the double quote char)
-
 
