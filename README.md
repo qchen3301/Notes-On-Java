@@ -4,8 +4,7 @@ Much learn (wow) so study
 ---
 ## Boilerplate Purpose  
 
-This repo and its files will host my self-study on Java, to be used later as reference material, or 
-a quick 'how-to' guide for working with IDEs such as Eclipse or IntelliJ, while doubling as good practice to keep my understanding of Git commands up to date. I will be primarily referencing the textbook 'Starting Out With Java' (6th Ed) by Tony Gaddis. Any additional reference material (blogposts, how-to guides) will be documented in the Acknowledgements/References subheader. 
+This repo and its files will host my self-study on Java, to be used later as reference material, or a quick 'how-to' guide for working with IDEs such as Eclipse or IntelliJ, while doubling as good practice to keep my understanding of Git commands up to date. I will be primarily referencing the textbook 'Starting Out With Java' (6th Ed) by Tony Gaddis. Any additional reference material (blogposts, how-to guides) will be documented in the Acknowledgements/References subheader. This repo is not meant to be comprehensive overview on Java or computer programming, either conceptually or practically. 
 
 ---
 ## Hardware
@@ -30,3 +29,8 @@ Because Java is designed as a universal language, its *source code* cannot be di
 
 IDEs bundle together text editing, compiling, debugging and other utilities into a single program for ease of development. 
 
+## Object-Oriented Programming (OOP)
+
+**Encapsulation**: the combining of data and code into a single *object*.
+
+**Data hiding**: the ability of an *object* to hide its data from code outside the object. Only an *object's methods* may directly access and make changes to its data. An *object* may allow outside code to access the *methods* that operate on its data. When an object's data allows only selective access through methods, it can protect is data from accidental corruption.
