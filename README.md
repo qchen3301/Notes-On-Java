@@ -49,6 +49,8 @@ The `class` is the most basic "unit" of Java. A Java file may have more than one
 
 An `object` descends from a `class`. When a program is run, it creates `object`s based on the parameters set by a `class`. Every `object` created from a class is called an `instance` of that class. 
 
+`Class`es must be *imported* in order to be used by Java programs, and are by convention imported at the very top of the program, before any other declarations.
+
 ### Naming conventions
 `variables` begin with lowercase and follow camelCase.
 
@@ -86,6 +88,12 @@ name.charAt(3); //returns 'm'
 
 `.toUpperCase()` returns the opposite, transforming `String` to all *UPPERCASE*
 
+`.equals()` can be used to compare either `String` *literals* or `String` `variables`, and will return a `boolean`
+
+`.compareTo()` is similar to `.equals()` but will return either `0`, `1`, or `-1` to determine whether or not a `String` *literal* or `variable` is equal, longer, or shorter. This `method` can be used in conjunction with *relational operators*, such as `==`, `<`, `>`, etc 
+
+** BE AWARE THAT `.equals()` AND `.compareTo()` ARE *CASE SENSITIVE* !!**
+
 ### Demonstrating Objects and Classes with `Scanner`
 
 `System.out` is an `object`. Its twin, `System.in` is also an `object`. However `System.in` only takes in data as *bytes*, so it must be partnered with a baked-in `class` called `Scanner` to have practical functionality.
@@ -96,10 +104,30 @@ name.charAt(3); //returns 'm'
 * `myScannerObject` is the name of the `object` of the `Scanner` `class`
 * `= new Scanner(System.in)` creates a `Scanner` `object` *in memory*, and gives it the functionality to *read input* from `System.in`
 
+### If-else conditonal syntax in Java
+
+```
+if (conditions =/</>/!=/etc) {
+    performAction;
+    performSecondAction;
+    performThirdAction;
+    andSoForth;
+    if (nestedCondition) {
+        performNestedAction;
+        performSecondNestedAction;
+        andBeAwareThatTheyMustEndInSemicolons;
+    } else {
+        performNestedElseAction;
+    }
+} else {
+    performElseAction;
+    andDontForgetAboutElseIfs;
+}
+```
 
 ### Methods and method headers
 
-A `method header` marks the beginning of a `method`. *Every* Java app must have a `main method`. **IntelliJ** has a keyboard macro for quickly construction a `main method`: `psvm`
+A `method header` marks the beginning of a `method`. *Every* Java app must have a `main method`. **IntelliJ** has a keyboard macro for quickly construction a `main method` - `psvm`
 
 ## Application Programmer Interfaces (APIs) and Java
 
