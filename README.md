@@ -11,3 +11,7 @@ a quick 'how-to' guide for working with IDEs such as Eclipse or IntelliJ, while 
 **Random Access Memory**: RAM holds the sequence of instructions, coded in binary, that programs references for its instructions.
 
 Memory is divided into sections that hold an equal amount of data, known as *switches*. *Switch On* is 1, *Switch Off* is 0. Each *switch* is a *bit*, or *binary digit*, with 8 *bits* making up a *byte*. Each *byte* is assigned a unique number known as an *address*, ordered from lowest to highest. 
+
+## The History and Utility of Java
+The first incarnation of Java was developed at Sun Microsystems as a precursor platform to what we would now call The Internet Of Things (*IoT*): a generic programming language that would not be constrained by different processors used by different consumer devices. While a market for an *IoT* did not emerge in the 90s or millenium, the nascent consumer-oriented *Information Super-highway* proved to be an applicable testbed for the Java team's theories on a universal programming language. 
+
