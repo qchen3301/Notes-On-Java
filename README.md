@@ -4,7 +4,7 @@ Much learn (wow) so study
 ---
 ## Boilerplate Purpose  
 
-This repo and its files will host my self-study on Java, to be used later as reference material, or a quick 'how-to' guide for working with IDEs such as Eclipse or IntelliJ, while doubling as good practice to keep my understanding of Git commands up to date. I will be primarily referencing the textbook 'Starting Out With Java' (6th Ed) by Tony Gaddis. Any additional reference material (blogposts, how-to guides) will be documented in the Acknowledgements/References subheader. This repo is not meant to be a comprehensive overview on Java nor computer programming, either conceptually or practically. 
+This repo and its files will host my self-study on Java, to be used later as reference material, or a quick 'how-to' guide for working with IDEs such as Eclipse or IntelliJ, while doubling as good practice to keep my understanding of Git commands up to date. I will be primarily referencing the textbook 'Starting Out With Java' (6th Ed) by Tony Gaddis. Any additional reference material (blogposts, how-to guides) will be documented in the Acknowledgements/References subheader. This repo is not meant to be a comprehensive overview on Java nor computer programming, either conceptually or practically. A Table Of Contents will be added eventually to facilitate access to specific subheaders, and condensed, information-heavy subheaders may be spun off into seperate files.
 
 ---
 ## Hardware
@@ -51,4 +51,6 @@ The `class` is the most basic "unit" of Java. A Java file may have more than one
 
 A `method header` marks the beginning of a `method`. *Every* Java app must have a `main method`. **IntelliJ** has a keyboard macro for quickly construction a `main method`: `psvm`
 
+## Application Programmer Interfaces (APIs) and Java
 
+`APIs` have a slightly different connotation in Java than they do with web frameworks. The textbook boilerplate for a `Java API` is: *a standard library of prewritten classes for performing specific operations.* Por ejemplo, `print` and `println` are `methods` that are part of the `System` class that is part of the `Java API`. `System` contians objects and methods that perform system-level operations. An `object` of the `System` class is `out`, that has internal `methods` such as `print` and `println`.
