@@ -301,6 +301,39 @@ When a `class` has multiple `methods` with the same name, that method is *overlo
 | \\'              | Single quote   | (prints the single quote char)
 | \\"              | Double quote   | (prints the double quote char)
 
+## Try and Catch These Hands, Fool
+
+Errors in code are handled as `exception` *objects*, of the `Exception` `class` in Java. These are instansiated as *try-catch* blocks. The basic syntax of a *try-catch* block is
+
+```java
+try {
+    //(execute some instructions)
+} catch (ExceptionType @paramName) {
+    //(execute catch instructions using @paramName)
+}
+```
+
+Por ejemplo: 
+
+```java
+import java.io.*; //Exception classes must be imported from the java.io.* superclass
+
+public class OpenFile {
+    public static void main(String[] args) {
+        File file;
+        Scanner inputFile;
+        String fileName;
+        try {
+            file = new File(fileName);
+            inputFile = new Scanner(file);
+        } catch (FileNotFoundException exceptionParam) {
+            System.out.println("Hello world from the catch block!");
+            System.out.println(null, exceptionParam);
+        }
+    }
+}
+```
+
 ## References
 
 [Javatpoint.com's article 'Understanding toString()'](https://www.javatpoint.com/understanding-toString()-method)
