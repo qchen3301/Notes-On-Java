@@ -204,12 +204,13 @@ public class Student {
     }
 
     //toString() overriding method
+    @Override
     public String toString() {
         return studentID + " " + studentName;
     }
 }
 ```
-Without `toString()` overriding this class would return "Student@1fee6fc Student@1eed745" or something similar, as opposed to the expected values of "77AD Qingis Khan" 
+Without `toString()` overriding this class would return "Student@1fee6fc Student@1eed745" or something similar, as opposed to the expected values of "77AD Qingis Khan". As a matter of convetion, `@Override` in-line documentation is created above the block overriding `toString()`, or any other *method overriding* statement. 
 
 ### Demonstrating Objects and Classes with `Scanner`
 
@@ -327,12 +328,18 @@ public class OpenFile {
             file = new File(fileName);
             inputFile = new Scanner(file);
         } catch (FileNotFoundException exceptionParam) {
-            System.out.println("Hello world from the catch block!");
+            System.out.println("Hello world from the catch clause!");
             System.out.println(null, exceptionParam);
+        } finally {
+            System.out.println("Hello world from the finally clause! Everything checks out!");
         }
     }
 }
 ```
+
+A *try-catch* block is not limited to a 1:1 `try` to `catch` ratio. A single `try` statement can have multiple `catch` clauses. A `catch` clause can also contain instructions not related to exception-handling, but relevant to the program's goals. For example, a `catch` clause for a student registration program could contain instructions that redirect the program to the beginning of the loop if a username entered is invalid. 
+
+Optionally, as shown above, a *try-catch* block can end with a `finally` clause. The purpose of the `finally` clause is largely self-explanatory.
 
 ## References
 

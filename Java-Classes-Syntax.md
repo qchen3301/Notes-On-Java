@@ -60,6 +60,7 @@ public class ClassName {     //the className must be the same as the name of the
     }
 
     //toString() overriding method
+    @Override
     public String toString() {
         return myString;
     }
