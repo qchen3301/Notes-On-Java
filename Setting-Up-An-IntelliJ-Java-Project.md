@@ -23,6 +23,14 @@
 
 **Open IntelliJ, create a new Project**
 
+![Step 01](assets/babbys-first-intellij-java-project/01.jpg)
+
+![Step 02](assets/babbys-first-intellij-java-project/02.jpg)
+
+![Step 03](assets/babbys-first-intellij-java-project/03.jpg)
+
+![Step 04](assets/babbys-first-intellij-java-project/04.jpg)
+
 **Create a new package under the project**
 
 **Create a Main class, instansiate a psvm in Main**
