@@ -33,6 +33,16 @@
 
 **Create a new package under the project**
 
+![Step 05](assets/babbys-first-intellij-java-project/05.jpg)
+
+![Step 06](assets/babbys-first-intellij-java-project/06.jpg)
+
 **Create a Main class, instansiate a psvm in Main**
 
-**Create other classes as necessar**
+![Step 07](assets/babbys-first-intellij-java-project/07.jpg)
+
+![Step 08](assets/babbys-first-intellij-java-project/08.jpg)
+
+**Create other classes as necessary**
+
+![Step 09](assets/babbys-first-intellij-java-project/09.jpg)
