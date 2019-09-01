@@ -4,22 +4,29 @@
 ## The Basic Structure
 
 imports
+
 class
+
     private vars
+
     constructor method(s)
+
     getter/accessor methods
+
     setter/mutatotor methods
+
     other methods    
 ---
 
 ## Code Example With Comments
 
 ```java
-import.java.* //imports (if applicable) are instansiated at the beginning of the file
+//imports (if applicable) are instansiated at the beginning of the file
+import.java.* 
 import.java.util.*
 
-public class ClassName { //the className must be the same as the name of the .java file
-    private String myString; //variables that are not @params are instansiated INSIDE the class' curly-bois
+public class ClassName {        //the className must be the same as the name of the .java file
+    private String myString;    //variables that are not @params are instansiated INSIDE the class' curly-bois
     private int myInt;
 
     //constructor method - overwrites Java's default constructor. If no constructor method is explicitly declared, Java defaults to its baked-in constructor
