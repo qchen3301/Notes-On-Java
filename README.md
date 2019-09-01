@@ -344,3 +344,5 @@ Optionally, as shown above, a *try-catch* block can end with a `finally` clause.
 ## References
 
 [Javatpoint.com's article 'Understanding toString()'](https://www.javatpoint.com/understanding-toString()-method)
+
+[Baeldung.com's article '@Override Annotaiton'](https://www.baeldung.com/java-override)
