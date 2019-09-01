@@ -24,7 +24,6 @@ Much learn (wow) so study
 ## Boilerplate Purpose  
 
 This repo and its files will host my self-study on Java, to be used later as reference material, or a quick 'how-to' guide for working with IDEs such as Eclipse or IntelliJ, while doubling as good practice to keep my understanding of Git commands up to date. I will be primarily referencing the textbook 'Starting Out With Java' (6th Ed) by Tony Gaddis. Any additional reference material (blogposts, how-to guides) will be documented in the Acknowledgements/References subheader. 
-
 This repo is not meant to be a comprehensive overview on Java nor computer programming, either conceptually or practically. A Table Of Contents will be added eventually to facilitate access to specific subheaders, and condensed, information-heavy subheaders may be spun off into seperate files.
 
 ## Hardware
@@ -66,9 +65,7 @@ public class Sample {
 ```
 
 The `class` is the most basic "unit" of Java. A Java file may have more than one `class` but it can only have one `public class`. Each `public class` of a Java file must be the same name as the file. Por ejemplo, the code block above must be in a file named `Sample.java`
-
 An `object` descends from a `class`. When a program is run, it creates `object`s based on the parameters set by a `class`. Every `object` created from a class is called an `instance` of that class. 
-
 `Class`es must be *imported* in order to be used by Java programs, and are by convention imported at the very top of the program file, before any other declarations.
 
 ### Naming conventions in general
@@ -135,8 +132,8 @@ public class MyClassDemo {
 
 Per convention, a class should contain a `constructor` `method` in its *fields*. `Constructor` `method`s perform setup and initializing operations, such as but not limited to storing initial values in instance *fields*. This allows access to a class as an object *reference*. Por ejemplo:
 
-`MyClassDemo aRectangle = new MyClassDemo(15, 20)`
-`MyClassDemo yetAnotherRectangle = new MyClassDemo(777, 4444)`
+>`MyClassDemo aRectangle = new MyClassDemo(15, 20)`
+>`MyClassDemo yetAnotherRectangle = new MyClassDemo(777, 4444)`
 
 ^ the above creates two `object` of the `class` `MyClassDemo`, stored in the `variable`s called `aRectangle` and `yetAnotherRectangle`, with the *values* of 15 and 20 in `aRectangle`, and the *values* 777 and 4444 in `yetAnotherRectangle`, thanks to `MyClassDemo`'s `constructor` `method`. By convention and syntax, a `constructor method` must be the same name as the `class`. A `class` named *MyClassDemo* would not have a `constructor method` named *MyClassDemoConstructor*
 
@@ -152,8 +149,6 @@ public MyClassDemo() {
 ```
 
 Two important things to note: any `constructor method`, `no-args` or otherwise, will override Java's `default constructor`, and a `no-args` constructor does not need `@params` if it is setting *fields*. 
-
-
 Also per convention, a class's *fields* (I don't like that word) should be private, and `accessor` and `mutator` methods should be written so that those *fields* must be accessed explicitly using dot notation. En lo ejemplo anterior, los `accessor` methods es `getLength()` and `getWidth()`, while the `mutator` methods `setLength()` and `setWidth()` allow a change to the *fields* from outside the scope of the class. 
 
 * `Accessor` = `getter`
@@ -166,19 +161,15 @@ Assignment must follow `variable` `=` `value` convention. `myVar = 12` is valid,
 
 ### Casting
 The `cast operator` allows a manual conversion of a `variable`'s value, even if it leads to a narrowing conversion. The syntax is:
-
-`varName` = `(newDataType) previousValue`
-
+>`varName` = `(newDataType) previousValue`
 Por ejemplo:
-
-`myStringVar` = `(int) 3345` <-this converts the literal string '3345' into the integer 3345 
+>`myStringVar` = `(int) 3345` <-this converts the literal string '3345' into the integer 3345 
 
 ### The Strange Case of The String Class
 
 The `String` class (always capitalized, following proper naming convention) has a few baked-in `methods` for quality of life operations.
 
 `.length()` returns the length, in `int`s, of a `var`
-
 `.charAt(someNumber)` returns the char at that position of a `String`. Por ejemplo:
 
 ```
@@ -187,11 +178,8 @@ name.charAt(3); //returns 'm'
 ```
 
 `.toLowerCase()` renders anything `String` with *UpPErCaSE* to all *lowercase*
-
 `.toUpperCase()` returns the opposite, transforming `String` to all *UPPERCASE*
-
 `.equals()` can be used to compare either `String` *literals* or `String` `variables`, and will return a `boolean`
-
 `.compareTo()` is similar to `.equals()` but will return either `0`, `1`, or `-1` to determine whether or not a `String` *literal* or `variable` is equal, longer, or shorter. This `method` can be used in conjunction with *relational operators*, such as `==`, `<`, `>`, etc 
 
 **BE AWARE THAT `.equals()` AND `.compareTo()` ARE *CASE SENSITIVE* !!**
