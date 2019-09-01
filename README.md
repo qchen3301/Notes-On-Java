@@ -65,11 +65,11 @@ public class Sample {
 }
 ```
 
-The `class` is the most basic "unit" of Java. A Java file may have more than one `class` but it can only have one `public class`. Each `public class` of a Java file must be the same name as the file. The code block above must be named `Sample.java`, por ejemplo.
+The `class` is the most basic "unit" of Java. A Java file may have more than one `class` but it can only have one `public class`. Each `public class` of a Java file must be the same name as the file. Por ejemplo, the code block above must be in a file named `Sample.java`
 
 An `object` descends from a `class`. When a program is run, it creates `object`s based on the parameters set by a `class`. Every `object` created from a class is called an `instance` of that class. 
 
-`Class`es must be *imported* in order to be used by Java programs, and are by convention imported at the very top of the program, before any other declarations.
+`Class`es must be *imported* in order to be used by Java programs, and are by convention imported at the very top of the program file, before any other declarations.
 
 ### Naming conventions in general
 `variables` begin with lowercase and follow camelCase.
@@ -140,7 +140,7 @@ Per convention, a class should contain a `constructor` `method` in its *fields*.
 
 ^ the above creates two `object` of the `class` `MyClassDemo`, stored in the `variable`s called `aRectangle` and `yetAnotherRectangle`, with the *values* of 15 and 20 in `aRectangle`, and the *values* 777 and 4444 in `yetAnotherRectangle`, thanks to `MyClassDemo`'s `constructor` `method`. By convention and syntax, a `constructor method` must be the same name as the `class`. A `class` named *MyClassDemo* would not have a `constructor method` named *MyClassDemoConstructor*
 
-#### A Special Case: the defaualt, and the no-args constructor!
+#### A Special Case: the default, and the no-args constructors!
 
 Exactly what it says on the tin. A `class` without an explicitly defined `constructor method` will be given one by Java at compilation, with all numeric values set to 0, `booleans` set to `false`, and *reference* `variables` set to `null`. However, there may be use cases where a `class` does not need to accept input when being instansiated as an `object`, but comes with its own pre-defined values. The syntax for a `no-args constructor` may be as simple as 
 
@@ -266,6 +266,10 @@ showSum(5, 10); // 5 and 10 are ARGUMENTS
 
 As a matter of convention, when commenting on `parameters`, use `@param` to denote when a `variable` is a `parameter` of a `method`, and `@return` to define the value a `method` returns.
 
+#### Method Overloading
+
+When a `class` has multiple `methods` with the same name, that method is *overloaded*. This has some useful applications. For example, a `constructor method` may want to have both an input option, but also a default option. An `add` method may want to allow for the addition of both numeric values and `String` or `char` values. 
+
 ## Application Programmer Interfaces (APIs) and Java
 
 `APIs` have a slightly different connotation in Java than they do with web frameworks. The textbook boilerplate for a `Java API` is: *a standard library of prewritten classes for performing specific operations.* Por ejemplo, `print` and `println` are `methods` that are part of the `System` class that is part of the `Java API`. `System` contians objects and methods that perform system-level operations. An `object` of the `System` class is `out`, that has internal `methods` such as `print` and `println`.
@@ -279,6 +283,6 @@ As a matter of convention, when commenting on `parameters`, use `@param` to deno
 | \b              | Backspace      | (moves the cursor back either up OR left, one position)
 | \r              | Return         | (moves the cursor to the beginning of the current line)
 | \\\\            | Backslash      | (prints the backslash char)
-| \'              | Single quote   | (prints the single quote char)
-| \"              | Double quote   | (prints the double quote char)
+| \\'              | Single quote   | (prints the single quote char)
+| \\"              | Double quote   | (prints the double quote char)
 
