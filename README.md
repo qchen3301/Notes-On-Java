@@ -196,6 +196,32 @@ name.charAt(3); //returns 'm'
 
 **BE AWARE THAT `.equals()` AND `.compareTo()` ARE *CASE SENSITIVE* !!**
 
+#### The toString() Horror
+
+##### Why override toString()?
+
+Printing out any `object` in Java invokes `toString()` automatically on that `object`. However, the values returned are not `String literals`, but `hashcode values`. Overriding the `String` `class`'s baked-in `toString()` method (in conjunction with a `class`'s `constructor method`s) will return end-user usable values. Por ejemplo:
+
+```java
+//example of a Student class that returns the ID and name of a student
+public class Student {
+    private String studentID;
+    private String studentName;
+
+    //constructor method
+    public Student (String studentID, String studentName) {
+        this.studentID = studentID;
+        this.studentName = studentName;
+    }
+
+    //toString() overriding method
+    public String toString() {
+        return studentID + " " + studentName;
+    }
+}
+```
+Without `toString()` overriding this class would return "Student@1fee6fc Student@1eed745" or something similar, as opposed to the expected values of "77AD Qingis Khan" 
+
 ### Demonstrating Objects and Classes with `Scanner`
 
 `System.out` is an `object`. Its twin, `System.in` is also an `object`. However `System.in` only takes in data as *bytes*, so it must be partnered with a baked-in `class` called `Scanner` to have practical functionality.
@@ -286,3 +312,6 @@ When a `class` has multiple `methods` with the same name, that method is *overlo
 | \\'              | Single quote   | (prints the single quote char)
 | \\"              | Double quote   | (prints the double quote char)
 
+## References
+
+[Javatpoint.com's article 'Understanding toString()](https://www.javatpoint.com/understanding-toString()-method)

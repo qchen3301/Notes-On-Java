@@ -5,17 +5,20 @@
 
     imports
 
-    class
+    class {
 
         private vars
 
-        constructor method(s)
+        constructor method(s) {}
 
-        getter/accessor methods
+        getter/accessor methods {}
 
-        setter/mutatotor methods
+        setter/mutatotor methods {}
 
-        other methods    
+        toString() overrideing method !!OPTIONAL/CONTEXTUAL!!
+
+        other methods {}
+    }   
 ---
 
 ## Code Example With Comments
@@ -56,6 +59,11 @@ public class ClassName {     //the className must be the same as the name of the
         this.myString = myString;
     }
 
+    //toString() overriding method
+    public String toString() {
+        return myString;
+    }
+
     //other methods
     //these will be called outside of the class with dot notation 
     //(ex: objectOfMyClass.convertType(4444);)
@@ -65,3 +73,9 @@ public class ClassName {     //the className must be the same as the name of the
     }
 }
 ```
+
+## References
+
+[GeeksForGeeks.com article Integer-to-String conversion](https://www.geeksforgeeks.org/different-ways-for-integer-to-string-conversions-in-java/)
+
+[GeekForGeeks.com article on Java class syntax](https://www.geeksforgeeks.org/classes-objects-java/)
