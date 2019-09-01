@@ -161,9 +161,10 @@ Assignment must follow `variable` `=` `value` convention. `myVar = 12` is valid,
 
 ### Casting
 The `cast operator` allows a manual conversion of a `variable`'s value, even if it leads to a narrowing conversion. The syntax is:
->`varName` = `(newDataType) previousValue`
+>`varName = (newDataType) previousValue`
+
 Por ejemplo:
->`myStringVar` = `(int) 3345` <-this converts the literal string '3345' into the integer 3345 
+>`myStringVar = (int) 3345 //this converts the literal string '3345' into the integer 3345` 
 
 ### The Strange Case of The String Class
 
@@ -302,4 +303,4 @@ When a `class` has multiple `methods` with the same name, that method is *overlo
 
 ## References
 
-[Javatpoint.com's article 'Understanding toString()](https://www.javatpoint.com/understanding-toString()-method)
+[Javatpoint.com's article 'Understanding toString()'](https://www.javatpoint.com/understanding-toString()-method)
